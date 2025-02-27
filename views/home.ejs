@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">k
+    <link rel="stylesheet" href="styles/style.css">
     <title>Blog</title>
 </head>
 <body>
     <div id="main">
-        <h1>Create Newe Post</h1>
-        <input type="text" name="author" id="author">
-        <input type="text" name="title" id="title">
-        <textarea name="content" id="content"></textarea>
+        <h1>Create New Post</h1>
+            <form action="submit" method="post">
+            <input type="text" name="author" id="author">
+            <input type="text" name="title" id="title">
+            <textarea name="content" id="content"></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </div>
 </body>
 </html>
