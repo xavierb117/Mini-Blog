@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles/style.css">
+    <title>Confirmation</title>
+</head>
+<body>
+    <div id = "main">
+        <h1>Thank you for your post, <%= newPost.author %>!</h1>
+        <p>Author: <%= newPost.author %></p>
+        <p>Title: <%= newPost.title %></p>
+        <p>Content: <%= newPost.content %></p>
+        <hr>
+        <a href = "/entries" class = "button">View All Entries</a>
+    </div>
+</body>
+</html>
