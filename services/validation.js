@@ -5,6 +5,14 @@ export function validateForm(data) {
         errors.push("Author is required and must have no numbers");
     }
 
+    if (!data.title || data.title.trim === "") {
+        errors.push("Title is required");
+    }
+
+    if (!data.content || data.content.length < 10) {
+        errors.push("Message must have at least 10 characters")
+    }
+
     return {
         isValid: errors.length === 0,
         errors
