@@ -14,7 +14,7 @@ export function validateForm(data) {
 function hasNumber(author) {
     for (let i = 0; i < author.length; i++) {
         let char = author.charAt(i);
-        if (isNaN(char)) {
+        if (!isNaN(char)) {
             return true;
         }
     }
