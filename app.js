@@ -51,6 +51,16 @@ app.post('/submit', async (req, res) => {
     res.render('confirmation', {newPost});
 });
 
+app.get('/entries', async (req, res) => {
+    const conn = await connect();
+
+    const posts = await conn.query('SELECT * FROM posts ORDER BY create_at DESC;');
+
+    console.log(posts);
+
+    res.render("entries.ejs", { posts });
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`)
 })

@@ -16,6 +16,10 @@ body {
     padding: 10px;
 }
 
+#noPost {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
 }
@@ -41,4 +45,5 @@ input, textarea, button {
 
 hr {
     margin-bottom: 1rem;
+    border-top: 2px solid black;
 }
