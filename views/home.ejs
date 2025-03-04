@@ -12,13 +12,13 @@
         <h1>Create a New Post</h1>
         <form action="submit" method="post" id="blog-form">
             <label for="author">Author</label>
-            <span class="err">Name is required and may not contain numbers</span>
+            <span class="err" id="err-author">Author is required and may not contain numbers</span>
             <input type="text" name="author" id="author">
             <label for="title">Title</label>
-            <span class="err">Title is required</span>
+            <span class="err" id="err-title">Title is required</span>
             <input type="text" name="title" id="title">
             <label for="content">Content</label>
-            <span class="err">Content must be atleast 10 characters</span>
+            <span class="err" id="err-content">Content must be atleast 10 characters</span>
             <textarea name="content" id="content"></textarea>
             <button type="submit" class = "button">Submit</button>
         </form>
