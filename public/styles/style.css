@@ -47,3 +47,8 @@ hr {
     margin-bottom: 1rem;
     border-top: 2px solid black;
 }
+
+.err {
+    color: red;
+    display: none;
+}
