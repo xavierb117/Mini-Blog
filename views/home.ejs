@@ -11,8 +11,11 @@
         <h1>Create a New Post</h1>
         <form action="submit" method="post">
             <input type="text" name="author" id="author">
+            <span class="err">Name is required and may not contain numbers</span>
             <input type="text" name="title" id="title">
+            <span class="err">Title is required</span>
             <textarea name="content" id="content"></textarea>
+            <span class="err">Message must be atleast 10 characters</span>
             <button type="submit" class = "button">Submit</button>
         </form>
         <a href = "/entries" class = "button">View Admin Posts</a>
